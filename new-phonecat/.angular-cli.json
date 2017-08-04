@@ -21,7 +21,26 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/angular/angular.js",
+        "../node_modules/angular-animate/angular-animate.js",
+        "../node_modules/angular-resource/angular-resource.js",
+        "../node_modules/angular-route/angular-route.js",
+
+        "oldProject/app.module.js",
+        "oldProject/app.config.js",
+        "oldProject/app.animations.js",
+        "oldProject/core/core.module.js",
+        "oldProject/core/checkmark/checkmark.filter.js",
+        "oldProject/core/phone/phone.module.js",
+        "oldProject/core/phone/phone.service.js",
+        "oldProject/phone-list/phone-list.module.js",
+        "oldProject/phone-list/phone-list.component.js",
+        "oldProject/phone-detail/phone-detail.module.js",
+        "oldProject/phone-detail/phone-detail.component.js"
+
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

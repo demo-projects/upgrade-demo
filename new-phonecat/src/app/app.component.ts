@@ -1,14 +1,20 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UpgradeModule} from '@angular/upgrade/static';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <h1>
-      Welcome to {{title}}!!
-    </h1>
+  template: `      
+    <div class="ng-view"></div>
   `,
-  styles: []
 })
-export class AppComponent {
-  title = 'app';
+export class AppComponent implements OnInit{
+  private upgrade: UpgradeModule;
+
+  constructor(upgrade: UpgradeModule) {
+    this.upgrade = upgrade;
+  }
+
+  ngOnInit(): void {
+    this.upgrade.bootstrap(document.body, ['phonecatApp']);
+  }
 }
