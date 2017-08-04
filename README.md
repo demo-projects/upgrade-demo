@@ -20,6 +20,8 @@ To launch the new Angular project run `npm start` (from the `new-phonecat` direc
 4. Copy all the javascript files into the new project under `src`
 5. install @angular/upgrade (`npm i @angular/upgrade`)
 6. import `UpgradeModule` to your `AppModule`
+7. bootstrap the `angularjs`module in your `AppComponent` init hook
+8. Move global files files to assets folder as needed
 
 `checkout 01_bootstrap`
 
