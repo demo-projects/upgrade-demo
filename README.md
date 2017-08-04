@@ -1,4 +1,4 @@
-# STEPS FOR MIGRATION
+# Angular Upgrade Demo
 
 Clone this repo, cd into `angular-phonecat` and run `npm install`.
 cd into `new-phonecat` and run `npm install`.
