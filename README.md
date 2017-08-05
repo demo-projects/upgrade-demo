@@ -26,9 +26,29 @@ To launch the new Angular project run `npm start` (from the `new-phonecat` direc
 `checkout 01_bootstrap`
 
 ### Dependency Injection
+##### AngularJS in Angular 
 1. Create new service in your `AngularJS` app (`logger.js`)
 2. The `upgradeModule` expose an `$injector` service to get `AngularJS` services
-3. create a new service in your `Angular` app (`storage.service.ts`)
-4. register it to your `AngularJS` with `downgradeInjectable` function  
+
+##### Angular in AngularJS
+1. create a new service in your `Angular` app (`storage.service.ts`)
+2. register it to your `AngularJS` with `downgradeInjectable` function  
 
 `checkout 02_dependcy_injection`
+
+### Component integration
+
+##### Angular in AngularJS
+1. create new `Angular` component.
+2. add it to your module: `entryComponent` array
+3. register it as a directive using `downgradeComponent`  
+4. use it in your `AngularJS` templates
+
+##### AngularJS in Angular
+1. create an `AngularJS` component
+2. add it your `AngularJS` module
+3. create an Angular directive that extends `UpgradeComponent`
+4. use an `element` selector with `kabbab-case`
+5. use it inside your `Angular` components templates
+
+`checkout 03_component_integration`
