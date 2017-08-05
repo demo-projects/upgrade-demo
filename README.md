@@ -26,6 +26,7 @@ To launch the new Angular project run `npm start` (from the `new-phonecat` direc
 `checkout 01_bootstrap`
 
 ### Dependency Injection
+
 ##### AngularJS in Angular 
 1. Create new service in your `AngularJS` app (`logger.js`)
 2. The `upgradeModule` expose an `$injector` service to get `AngularJS` services
@@ -52,3 +53,11 @@ To launch the new Angular project run `npm start` (from the `new-phonecat` direc
 5. use it inside your `Angular` components templates
 
 `checkout 03_component_integration`
+
+### Summary
+Upgrading an existing AngularJS to Angular is easy
+with the `UpgradeModule`.
+
+Look at the code comments for descriptions.
+
+`checkout 04_summary_comments`
