@@ -35,6 +35,7 @@
         "oldProject/core/checkmark/checkmark.filter.js",
         "oldProject/core/phone/phone.module.js",
         "oldProject/core/phone/phone.service.js",
+        "oldProject/core/utils/logger.js",
         "oldProject/phone-list/phone-list.module.js",
         "oldProject/phone-list/phone-list.component.js",
         "oldProject/phone-detail/phone-detail.module.js",

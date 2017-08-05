@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Inject} from '@angular/core';
 import {UpgradeModule} from '@angular/upgrade/static';
 
 @Component({
@@ -16,5 +16,8 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.upgrade.bootstrap(document.body, ['phonecatApp']);
+
+    const logger = this.upgrade.$injector.get(`Logger`);
+    logger.log('Working!!')
   }
 }
